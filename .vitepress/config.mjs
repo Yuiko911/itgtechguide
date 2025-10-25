@@ -2,27 +2,29 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ITGTech",
-  description: "A VitePress Site",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+	title: "ITG Tech Guide",
+	description: "A VitePress Site",
+	srcDir: 'src',
+	themeConfig: {
+		// https://vitepress.dev/reference/default-theme-config
+		nav: [
+			{ text: 'Home', link: '/' },
+			{ text: 'Notation', link: '/tech/notation' }
+		],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+		sidebar: [
+			{
+				text: 'Tech',
+				items: [
+					{ text: 'Notation', link: '/tech/notation' },
+					{ text: 'Patterns', link: '/tech/patterns' },
+					{ text: 'Egg Carton', link: '/tech/eggcartonedit' },
+				]
+			}
+		],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+		socialLinks: [
+			{ icon: 'github', link: 'https://github.com/Yuiko911/itgtechguide' }
+		],
+	}
 })
